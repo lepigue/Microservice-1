@@ -34,63 +34,14 @@ const productSchema = mongoose.Schema({
 // Compile the model from the schema.
 const Product= mongoose.model("Product", productSchema);
 
-///mongoDB
-
-// CREATE model *****************************************
-const createProduct = async (type, name, description,link, date) => {
-  const product = new Product({
-    type: type,
-    name: name,
-    description: description,
-    link: link,
-    date: date,
-  });
-  return product.save();
-};
-
 // RETRIEVE models *****************************************
-// Retrieve based on a filter and return a promise.
-const findProducts = async (filter) => {
-  const query = Product.find(filter);
+
+const findNumberOfProducts = async (filter) => {
+  const query = Product.countDocuments();
   return query.exec();
 };
-
-// Retrieve based on the ID and return a promise.
-const findProductById = async (_id) => {
-  const query = Product.findById(_id);
-  return query.exec();
-};
-
-// DELETE model based on ID  *****************************************
-const deleteById = async (_id) => {
-  const result = await Product.deleteOne({ _id: _id });
-  return result.deletedCount;
-};
-
-// REPLACE model *****************************************************
-///UPDATE ,Method = PUT
-
-const replaceProduct = async (_id, type, name, description, link, date) => {
-  const result = await Product.replaceOne(
-    { _id: _id },
-    {
-      type: type,
-      name: name,
-      description: description,
-      link: link,
-      date: date,
-    }
-  );
-  return result.modifiedCount;
-};
-
-///function
 
 // Export our variables for use in the controller file.
 export {
-  createProduct,
-  findProducts,
-  findProductById,
-  replaceProduct,
-  deleteById,
+  findNumberOfProducts
 };
