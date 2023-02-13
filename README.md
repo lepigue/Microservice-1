@@ -1,15 +1,15 @@
-#Product Count Microservice
+# Product Count Microservice
 
 
 This is a simple microservice for counting a number of products in a MongoDB database. The microservice is implemented in Node.js using the Mongoose library. 
 
-#Requirements: 
+# Requirements: 
 
 ●	Node.js
 ●	MongoDB
 ●	Mongoose library
 
-#Installation: 
+# Installation: 
 
 1.	Clone the repository:
 ![image](https://user-images.githubusercontent.com/71670898/218364979-246d7ad8-36fc-49ac-88c9-2cbed6a0c923.png)
@@ -21,7 +21,7 @@ Create a `.env` file in the root directory of the project and set the following 
 
 Replace `<host>`, `<port>` and `<database>` with the appropriate values for your MongoDB installation. 
 
-Usage: 
+# Usage: 
 
 1.	Start the microservice: 
 ![image](https://user-images.githubusercontent.com/71670898/218365088-cc7d1dd7-312b-48d6-bdd9-e7ce052f3fe9.png)
