@@ -11,7 +11,8 @@ This is a simple microservice for counting a number of products in a MongoDB dat
 
 # Installation: 
 
-1.	Clone the repository:
+1.	Clone the repository: <br>
+
 ![image](https://user-images.githubusercontent.com/71670898/218364979-246d7ad8-36fc-49ac-88c9-2cbed6a0c923.png)
 2.	Install the dependencies:
 ![image](https://user-images.githubusercontent.com/71670898/218365021-8943284b-b07d-4090-8c76-7ce5ad1b5221.png)
